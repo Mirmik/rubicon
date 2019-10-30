@@ -11,19 +11,19 @@ import os
 directory = os.path.dirname(__file__)
 
 setup(
-    name="rubicon",
-    packages=["rubicon"],
+    name="servitor",
+    packages=["servitor"],
     version="0.0.1",
     license="MIT",
     description="Terminal",
     author="mirmik",
     author_email="netricks@protonmail.ru",
-    url="https://github.com/mirmik/rubicon",
+    url="https://github.com/mirmik/servitor",
     long_description=open(os.path.join(directory, "README.md"), "r").read(),
     long_description_content_type="text/markdown",
     keywords=["testing", "terminal"],
     classifiers=[],
     package_data={},
     include_package_data=True,
-    entry_points={"console_scripts": ["rubicon=rubicon.__main__:main"]},
+    entry_points={"console_scripts": ["servitor=servitor.__main__:main"]},
 )
