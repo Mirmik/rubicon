@@ -3,6 +3,8 @@ import threading
 import sys
 import argparse
 
+__DEBUG__ = True
+
 def readbyte(b):
 	try:
 		return b.decode("utf-8")
@@ -23,7 +25,9 @@ def file_loop(ser):
 
 	while 1:
 		s = input()
-		wfile.write(s.encode("utf-8"))
+		s = s.encode("utf-8")
+		print("input:", s)
+		wfile.write(s)
 
 def main():
 	parser = argparse.ArgumentParser()
