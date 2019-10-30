@@ -13,7 +13,7 @@ directory = os.path.dirname(__file__)
 setup(
     name="servitor",
     packages=["servitor"],
-    version="0.0.1",
+    version="0.0.3",
     license="MIT",
     description="Terminal",
     author="mirmik",
