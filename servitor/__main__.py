@@ -27,7 +27,7 @@ def file_loop(ser):
 		s = input()
 		s = s.encode("utf-8")
 		print("input:", s)
-		wfile.write(s)
+		wfile.print(s)
 
 def main():
 	parser = argparse.ArgumentParser()
